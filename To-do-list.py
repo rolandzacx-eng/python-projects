@@ -12,18 +12,18 @@ def add_task(tasks):
     print("Task added!")
 
 def view_task(tasks):
-      if not tasks:
-          print("No tasks yet!")
-          return
-      for i, t in enumerate(tasks):
-          status = "x" if t["done"] else " "
-          print(f"{i+1}. [{status}] {t['task']}")
+    if not tasks:
+        print("No tasks yet!")
+        return
+    for i, t in enumerate(tasks):
+        status = "x" if t["done"] else " "
+        print(f"{i+1}. [{status}] {t['task']}")
 
 def mark_done(tasks):
     view_task(tasks)
     if not tasks:
         return
-    num = int(input("which task number is done? ")) -1
+    num = int(input("Which task number is done? ")) - 1
     if 0 <= num < len(tasks):
         tasks[num]["done"] = True
         print("Marked done!")
@@ -31,37 +31,32 @@ def mark_done(tasks):
         print("Invalid task number.")
 
 def delete_task(tasks):
-      view_task(tasks)
-      if not tasks:
-          return
-      num = int(input("Which task number to delete? ")) - 1
-      if 0 <= num < len(tasks):
-          removed = tasks.pop(num)
-          print(f"Deleted: {removed['task']}")
-      else:
-          print("Invalid task number.")
+    view_task(tasks)
+    if not tasks:
+        return
+    num = int(input("Which task number to delete? ")) - 1
+    if 0 <= num < len(tasks):
+        removed = tasks.pop(num)
+        print(f"Deleted: {removed['task']}")
+    else:
+        print("Invalid task number.")
 
 def main():
     tasks = []
     while True:
         show_menu()
         choice = input("Choose an option: ")
-
         if choice == "1":
             add_task(tasks)
-        elif choice == "2" :
+        elif choice == "2":
             view_task(tasks)
-        elif choice == "3" :
+        elif choice == "3":
             mark_done(tasks)
-        elif choice == "4" :
+        elif choice == "4":
             delete_task(tasks)
-        elif choice == "5" :
+        elif choice == "5":
             print("Goodbye!")
             break
         else:
-            print("Invalid choice,try again.")
-
+            print("Invalid choice, try again.")
 main()
-
-
-
