@@ -1,3 +1,6 @@
+import json
+
+
 def show_menu():
     print("\n--- TO-DO LIST ---")
     print("1. Add task")
@@ -41,8 +44,24 @@ def delete_task(tasks):
     else:
         print("Invalid task number.")
 
+def save_tasks(tasks):
+    file = open("tasks.json", "w")
+    json.dump(tasks, file)
+    file.close() 
+
+def load_tasks():
+    try:
+        file = open("tasks.json", "r")
+        tasks = json.load(file)
+        file.close()
+        return tasks
+    except:
+        return[]
+
+
+
 def main():
-    tasks = []
+    tasks = load_tasks()
     while True:
         show_menu()
         choice = input("Choose an option: ")
@@ -55,7 +74,8 @@ def main():
         elif choice == "4":
             delete_task(tasks)
         elif choice == "5":
-            print("Goodbye!")
+            save_tasks(tasks)
+            print("Tasks saved. Goodbye!")
             break
         else:
             print("Invalid choice, try again.")
