@@ -49,4 +49,4 @@ Later, more advanced projects (like the [Student Grade Tracker](https://github.c
 
 ## Author
 
-Built by Roland (rolandzacx-eng) as part of an ongoing series of Python practice projects.
+Built by Roland (rolandzacx-eng)
