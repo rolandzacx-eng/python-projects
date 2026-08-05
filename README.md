@@ -43,10 +43,6 @@ python password_generator.py
 python To-do-list.py
 ```
 
-## Related Repositories
-
-Later, more advanced projects (like the [Student Grade Tracker](https://github.com/rolandzacx-eng/student-grade-tracker)) are kept in their own dedicated repositories as the projects grew in scope and complexity.
-
 ## Author
 
 Built by Roland (rolandzacx-eng)
