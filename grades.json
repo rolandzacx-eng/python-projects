@@ -1,0 +1,23 @@
+{
+    "Roland": {
+        "Math": [
+            {
+                "name": "Test 1",
+                "score": 68.0,
+                "weight": 0.6
+            }
+        ],
+        "Networks": [
+            {
+                "name": "Test 1",
+                "score": 70,
+                "weight": 0.5
+            },
+            {
+                "name": "Final exam",
+                "score": 90,
+                "weight": 0.5
+            }
+        ]
+    }
+}

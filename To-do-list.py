@@ -1,6 +1,5 @@
 import json
 
-
 def show_menu():
     print("\n--- TO-DO LIST ---")
     print("1. Add task")
@@ -57,8 +56,6 @@ def load_tasks():
         return tasks
     except:
         return[]
-
-
 
 def main():
     tasks = load_tasks()
