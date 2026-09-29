@@ -37,7 +37,7 @@ A menu-driven to-do list application with full CRUD functionality (add, view, co
 
 A menu-driven bank account system built around an `Account` class — the first project in the series to use object-oriented programming. Supports creating accounts, deposits, withdrawals (with an insufficient-funds check), balance checks, and per-account transaction history. Accounts are saved to and loaded from JSON, and user input is validated so invalid entries (non-numbers, negative amounts) don't crash the program.
 
-## Tech Stack
+## Tech provision
 
 - **Language:** Python 3
 - **Storage:** JSON file persistence
@@ -58,7 +58,7 @@ Run any project with Python 3:
 python bank.py
 \`\`\`
 
-## What This Series Covers
+## Covers
 
 - Core syntax: variables, conditionals, loops, functions
 - Working with user input and formatted output (f-strings)
@@ -66,8 +66,6 @@ python bank.py
 - Error handling with \`try\`/\`except\`
 - Building interactive, menu-driven command-line programs
 - Object-oriented programming: classes, \`self\`, methods, and instances
-
-More projects are added as the series continues.
 
 ## Author
 
