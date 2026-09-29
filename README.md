@@ -33,15 +33,7 @@ Generates secure random passwords based on user-defined criteria (length, charac
 
 A menu-driven to-do list application with full CRUD functionality (add, view, complete, delete tasks). Uses JSON storage, so tasks persist between sessions.
 
-### 5. Weather CLI App (`Weather-app/`)
-
-A command-line weather app that fetches live weather data from [WeatherAPI.com](https://www.weatherapi.com/). Includes a search history feature, so previously searched locations are saved and can be revisited.
-
-### 6. Student Grade Tracker (`Student-Grade-Tracker.py`)
-
-A menu-driven grade tracker for recording and managing student grades, with JSON storage so records persist between sessions.
-
-### 7. Bank Account System (`bank.py`)
+### 5. Bank Account System (`bank.py`)
 
 A menu-driven bank account system built around an `Account` class — the first project in the series to use object-oriented programming. Supports creating accounts, deposits, withdrawals (with an insufficient-funds check), balance checks, and per-account transaction history. Accounts are saved to and loaded from JSON, and user input is validated so invalid entries (non-numbers, negative amounts) don't crash the program.
 
@@ -49,7 +41,6 @@ A menu-driven bank account system built around an `Account` class — the first 
 
 - **Language:** Python 3
 - **Storage:** JSON file persistence
-- **External API:** WeatherAPI.com (Weather CLI App)
 - **Tools:** VS Code, Git & GitHub
 
 ## Getting Started
@@ -75,7 +66,6 @@ Some projects (like the Weather CLI App) may require an API key — check the pr
 - Working with user input and formatted output (f-strings)
 - File I/O and persistent storage using JSON
 - Error handling with \`try\`/\`except\`
-- Working with external APIs
 - Building interactive, menu-driven command-line programs
 - Object-oriented programming: classes, \`self\`, methods, and instances
 
