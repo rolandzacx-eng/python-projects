@@ -1,6 +1,6 @@
 # Python Projects
 
-A structured series of Python projects, building up core programming skills one project at a time — from basic scripts to object-oriented programs with persistent storage and external API integration.
+A structured series of Python projects, building up core programming skills one project at a time — from basic scripts to object-oriented programs with persistent storage.
 
 ## Table of Contents
 
@@ -57,8 +57,6 @@ Run any project with Python 3:
 \`\`\`bash
 python bank.py
 \`\`\`
-
-Some projects (like the Weather CLI App) may require an API key — check the project's own folder for setup details.
 
 ## What This Series Covers
 
